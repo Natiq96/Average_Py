@@ -1,0 +1,92 @@
+This is english...
+
+1. Function Definition: average(count)
+def average(count):: This line defines a function named average. It takes a parameter called count, which indicates how many numbers the user wants to input.
+2. Internal Variables and Loop
+my_list = []: This creates an empty list named my_list where the numbers entered by the user will be stored.
+
+total = 0: Initializes a variable total to zero. This will be used to accumulate the sum of the numbers.
+
+count_number = count: Creates a variable count_number to store the number of inputs originally requested by the user. This is used to calculate the average after the loop reduces count.
+
+while count > 0:: This loop runs as long as count is greater than zero. It repeatedly asks the user for numbers until the specified number of inputs is collected.
+
+print(f"You can enter {count} numbers !"): Displays a message informing the user how many numbers they can still enter.
+
+numbers = int(input("Enter the number !")): Prompts the user to enter a number and converts the input to an integer.
+
+my_list += [numbers]: Adds the entered number to the my_list.
+
+count -= 1: Decreases count by 1 to keep track of how many numbers are left to be entered.
+
+3. Average Calculation
+for number in my_list:: Iterates over each number in my_list.
+
+total += number: Adds each number to the total variable to compute the sum.
+average_number = total / count_number: Calculates the average by dividing the total sum by count_number, which represents the original number of inputs.
+
+print(f"Average ; {int(average_number)}"): Prints the computed average. The int() function is used to convert the average to an integer, discarding any decimal part.
+
+4. Function Call and Input Validation
+count = int(input("How many number do you want to enter?")): Asks the user how many numbers they want to enter and converts the response to an integer.
+
+if count > 1:: Checks if the user-entered number is greater than 1. This ensures that a valid number of inputs is provided.
+
+average(count): Calls the average function with count as the argument.
+else:: If count is 1 or less, it displays a message asking for a valid number of inputs.
+
+Python Libraries Used
+int(): Converts a value to an integer.
+input(): Reads user input.
+print(): Outputs data to the screen.
+for loop: Iterates over each element in a list or other iterable collections.
+while loop: Continues to execute as long as a specified condition is true.
+
+
+
+Bu isə Azərbaycan dilində izahı...
+
+
+
+
+1. Funksiya Təyin Edilməsi: average(count)
+def average(count):: Bu sətir average adında bir funksiya təyin edir. count adlı parametr istifadəçidən neçə ədəd daxil edəcəyini bildirir.
+2. Dəyişənlər və Döngü
+my_list = []: Bu, istifadəçidən daxil edilən ədədləri saxlayacaq boş bir siyahı yaradır.
+
+total = 0: total adlı dəyişəni sıfır olaraq başlanğıc edir. Bu dəyişən ədədlərin cəmini toplamaq üçün istifadə olunur.
+
+count_number = count: count_number adlı dəyişəni count dəyişəninin dəyərini saxlamaq üçün istifadə edir. Bu, döngü zamanı count dəyişəninin azaldılmasını balanslaşdırır.
+
+while count > 0:: Bu döngü count sıfırdan böyük olduğu müddətdə işləyir. İstifadəçidən göstərilən sayda ədəd daxil etməsini tələb edir.
+
+print(f"You can enter {count} numbers !"): İstifadəçiyə neçə ədəd daxil edə biləcəyini bildirən mesaj yazdırır.
+
+numbers = int(input("Enter the number !")): İstifadəçidən bir ədəd daxil etməsini istəyir və bu ədədi tam ədədə (int) çevirir.
+
+my_list += [numbers]: Daxil edilən ədədi my_list adlı siyahıya əlavə edir.
+
+count -= 1: Daxil edilməli ədədlərin sayını azaldır.
+
+3. Orta Hesablanması
+for number in my_list:: Bu döngü siyahıdakı hər bir ədədi total dəyişəninə əlavə edir.
+
+total += number: Hər bir ədədi total dəyişəninə əlavə edir.
+average_number = total / count_number: total dəyişəninin count_number dəyişəninə bölünməsi ilə orta hesablanır.
+
+print(f"Average ; {int(average_number)}"): Hesablanan ortanı ekrana yazdırır. int() funksiyası ortanı tam ədədə çevirir, yəni ondalıklı hissəni silir.
+
+4. Funksiya Çağırışı və Giriş Nəzarəti
+count = int(input("How many number do you want to enter?")): İstifadəçidən neçə ədəd daxil etmək istədiyini soruşur və cavabı tam ədədə çevirir.
+
+if count > 1:: İstifadəçinin daxil etdiyi sayın 1-dən böyük olduğunu yoxlayır.
+
+average(count): average funksiyasını count dəyişəni ilə çağırır.
+else:: Əgər count 1 və ya daha azdırsa, istifadəçiyə düzgün bir say daxil etməsi lazım olduğunu bildirir.
+
+Python Kitabxanaları
+int(): Dəyəri tam ədədə çevirir.
+input(): İstifadəçidən məlumat alır.
+print(): Ekrana məlumat çıxarır.
+for döngüsü: Siyahı və ya digər kolleksiyaların hər bir elementini işləmək üçün istifadə olunur.
+while döngüsü: Müəyyən bir şərt doğru olduğu müddətdə işləyir.
